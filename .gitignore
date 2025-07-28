@@ -1,0 +1,27 @@
+# node modules
+node_modules/
+
+# build
+dist/
+build/
+
+# parcel
+.parcel-cache/
+dist/
+
+# entorno
+.env
+.env.local
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# IDE/editor
+.vscode/
+.idea/
+
+# sistema
+.DS_Store
+Thumbs.db
