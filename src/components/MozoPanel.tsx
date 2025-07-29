@@ -1,11 +1,21 @@
 import React from 'react';
-import { Container, Button } from 'react-bootstrap';
+import NavbarMozo from './NavbarMozo';
+import SidebarMesas from './SidebarMesas';
+import '../styles/main.scss';
 
-export default function MozoPanel() {
+const MozoPanel = () => {
   return (
-    <Container className="text-center mt-5">
-      <h1>Panel del Mozo</h1>
-      <Button variant="primary">Tomar Pedido</Button>
-    </Container>
+    <div className="mozo-panel">
+      <NavbarMozo />
+      <div className="d-flex">
+        <SidebarMesas />
+        <div className=" m-10 p-5 flex-grow-1">
+          {/* Acá se renderizaría la vista del modal o el menú según la acción */}
+          <p>Selecciona una mesa del sidebar</p>
+        </div>
+      </div>
+    </div>
   );
-}
+};
+
+export default MozoPanel;

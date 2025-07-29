@@ -1,4 +1,50 @@
+@import "bootstrap/scss/bootstrap";
+
+html,
 body {
-  background-color: #f8f9fa;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #2181e1;
   font-family: sans-serif;
+}
+
+.mozo-panel {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mozo-panel > .d-flex {
+  flex: 1;
+  display: flex;
+  height: calc(100vh - 56px); // Resta el alto del navbar fijo
+}
+
+/* Sidebar estilo */
+.sidebar {
+  background-color: #191515; // mismo que el navbar
+  color: #eaeaea;
+  width: 250px;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+/* List items claros sobre fondo oscuro */
+.sidebar .list-group-item {
+  background-color: transparent;
+  color: #e6e6e6;
+  border: none;
+}
+
+.sidebar .list-group-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+/* Contenedor derecho */
+.flex-grow-1 {
+  background-color: #044281;
+  padding: 2rem;
+  overflow-y: auto;
 }
